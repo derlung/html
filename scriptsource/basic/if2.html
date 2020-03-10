@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //사용자로부터 숫자를 입력받아 양수,0,음수인지를 구분하는 프로그램을 작성
+      let num = Number(prompt("숫자를 입력해 주세요", "숫자"));
+      if (num > 0) {
+        document.body.innerText = "양수";
+      } else if (num === 0) {
+        document.body.innerText = "0";
+      } else if (num < 0) {
+        document.body.innerText = "음수";
+      } else {
+        document.body.innerText = "숫자가 아닙니다";
+      }
+    </script>
+  </body>
+</html>

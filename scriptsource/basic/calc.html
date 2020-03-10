@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>사칙연산 계산기</h1>
+    </div>
+    <div>
+      <input type="text" name="num1" id="num1" />
+      <select name="op" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" name="num2" id="num2" />
+      <input type="button" value="계산" onclick="fourRules()" />
+    </div>
+    <div>
+      <input type="text" name="result" id="result" readonly />
+    </div>
+    <script>
+      function fourRules() {
+        //계산버튼 클릭하면 사용자가 입력한 숫자 가져오기
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+        let type = document.getElementById("op").value;
+        let result;
+
+        switch (type) {
+          case "+":
+            result = num1 + num2;
+            console.log(result);
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num1 / num2;
+            break;
+        }
+        let inresult = document.getElementById("result");
+        inresult.value = result;
+      }
+    </script>
+  </body>
+</html>

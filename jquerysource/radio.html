@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>좋아하는 과일을 고르시오</h3>
+    <div>
+      <input type="checkbox" name="fruits" value="사과" />
+      <label for="">사과</label>
+    </div>
+    <div>
+      <input type="checkbox" name="fruits" value="포도" />
+      <label for="">포도</label>
+    </div>
+    <div>
+      <input type="checkbox" name="fruits" value="바나나" />
+      <label for="">바나나</label>
+    </div>
+    <div>
+      <input type="checkbox" name="fruits" value="파인애플" />
+      <label for="">파인애플</label>
+    </div>
+    <div><button>선택완료</button></div>
+    <script>
+      $("button").click(function() {
+        // alert($(":checkbox:checked").val());
+        let fruits = "";
+        $("input:checked").each(function() {
+          fruits += $(this).val();
+        });
+        alert(fruits);
+      });
+    </script>
+  </body>
+</html>

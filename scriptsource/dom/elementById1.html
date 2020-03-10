@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h1 id="header2">Header2</h1>
+    <script>
+      let h1 = document.getElementById("header1");
+      console.log(h1.value);
+      console.log(h1.innerText);
+      let h2 = document.getElementById("header2");
+      console.log(h2.value);
+      h2.innerText = "with getElementById()";
+    </script>
+  </body>
+</html>

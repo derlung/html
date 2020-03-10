@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    [target = _blank]{
+        background-color:blueviolet;
+        color:#fff;
+    }
+    [target = _self]{
+        background-color:goldenrod;
+        text-decoration:none;
+        color : #fff;
+    }
+    [class^="google"]{
+        list-style-type:none;
+    }
+    .link1,.link2{
+        list-style-type:none;
+    }
+    [class$="name"]{
+        color:red;
+        padding:10px;
+    }
+    [class$="color"]{
+        color: blue;
+        opacity: 0.3;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="title">CSS 기본문법</h1>
+    <h2><속성 선택자/h2>
+    <ul>
+        <li class="google"><a href="#" target="_blank">google</a></li>
+        <li class="link1"><a href="#" target="_blank">daum</a></li>
+        <li class="link2"><a href="#" target="_self">naver</a></li>
+    </ul>
+    <a href="mailto:master@daewoo.com">master@daewoo.com</a>
+    <div><input type="text" class="fruit_name">
+        <input type="text" class="fruit_color">
+    </div>
+</body>
+</html>

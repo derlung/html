@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        margin: 2rem auto;
+        width: 100%;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        background: #3498db;
+        padding: 25px;
+        order: 1;
+      }
+      .flexbg .right {
+        background: #34495e;
+        padding: 25px;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg left {
+          width: 50%;
+          order: 2;
+        }
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse ex cum
+          laudantium placeat! Et officiis voluptates nemo sint assumenda minima
+          similique numquam autem quo voluptas nobis placeat, fugit eos atque
+          dignissimos alias deleniti! In mollitia asperiores inventore? Ipsa
+          reiciendis mollitia perferendis vel voluptates. Architecto vero dolore
+          provident recusandae laborum doloremque rem ullam! Dolore porro animi
+          molestias voluptatum dicta maiores illum placeat vitae, at est eius
+          adipisci deserunt nihil magni sit sapiente aliquid exercitationem
+          architecto error suscipit facilis eos ratione? Voluptates deleniti
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+          fugit magni natus aperiam at suscipit atque maiores numquam soluta
+          explicabo itaque eaque asperiores ullam rerum voluptate quisquam, illo
+          nihil alias hic. Quam minima repudiandae numquam ea mollitia ullam
+          autem accusantium! Repellendus at illo inventore est pariatur totam
+          asperiores? Culpa asperiores possimus obcaecati, dolorem voluptate
+          ipsa mollitia illo et velit odio laudantium quia? Molestiae iste,
+          nulla autem inventore placeat iure sit dolore ipsa, perspiciatis
+          tempore consequuntur earum soluta cum ipsum qui similique delectus
+          rerum doloribus eaque voluptatibus? Molestias quos ea, dolore, facilis
+          animi beatae autem exercitationem deserunt, nulla consequuntur amet
+          minus?
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </aside>
+    </div>
+  </body>
+</html>

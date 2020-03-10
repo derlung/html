@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head   profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png"> 
+  <body>
+    <h1 id="header1"></h1>
+    <h2 id="header2"></h2>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+    </ul>
+    <ul>
+      <li>List item5</li>
+      <li>List item6</li>
+      <li>List item7</li>
+      <li>List item8</li>
+    </ul>
+    <div id="result"></div>
+    <script>
+      let header1 = document.querySelector("#header1");
+      console.log(header1);
+
+      let header2 = document.querySelector("#header2");
+      console.log(header2);
+
+      console.log(document.getElementsByClassName("header2"));
+      console.log();
+      console.log(document.querySelector("h1"));
+    </script>
+  </body>
+</html>

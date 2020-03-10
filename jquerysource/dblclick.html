@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="hide1">If you double-click on me. I will disapper</h2>
+    <h2 class="hide2">click me away!</h2>
+    <h2 class="hide2">click me too!!</h2>
+    <script>
+      $(".hide2").click(function() {
+        $(this).hide(10000);
+      });
+      $(".hide1").dblclick(function() {
+        $(this).hide();
+      });
+    </script>
+  </body>
+</html>

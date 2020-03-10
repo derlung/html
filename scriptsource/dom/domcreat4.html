@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .callout {
+        border: 1px solid #ff0080;
+        margin: 2px 4px;
+        padding: 2px 6px;
+      }
+      .code {
+        background: #ccc;
+        margin: 1px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Simple HTML</h1>
+    </header>
+    <div class="content">
+      <p>This is a<i>simple</i> HTML file</p>
+    </div>
+    <div class="callout">
+      <p>This is as fancy as we'll get!</p>
+    </div>
+    <p>
+      IDS (such <span class="code">#content</span>) are unique be one per page).
+    </p>
+
+    <p>
+      Class(such <span class="code">.callout</span>) can be used on many
+      elements
+    </p>
+    <div id="callout" class="callout fancy">
+      <p>A single HTML element can have multiple classes.</p>
+    </div>
+    <script>
+      // 기존 요소에 앞 뒤로 새로 생성된 요소 삽입하기
+      const p1 = document.createElement("p");
+      const p2 = document.createElement("p");
+
+      p1.innerText = "I was created dynamically";
+      p2.innerText = "I was also created dynamically!";
+
+      //첫번째 p1은 클래스가 content인 태그 안에 첫번째 자식으로 삽입하고
+      //p2는 마지막 자식으로 삽입하기
+
+      let content = document.querySelector(".content");
+      content.insertBefore(p1, content.firstElementChild);
+      content.appendChild(p2);
+    </script>
+  </body>
+</html>

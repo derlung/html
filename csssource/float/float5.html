@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .content {
+        background-color: skyblue;
+        /* height: 100px; */
+      }
+      img {
+        vertical-align: top;
+      }
+      .content div {
+        border: 2px solid;
+        float: left;
+        height: 100px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>float 속성을 이용한 이미지 배치</h1>
+    <div class="content clearfix">
+      <div><img src="http://placehold.it/100x100" alt="thumb" /></div>
+      <div><img src="http://placehold.it/100x100" alt="thumb" /></div>
+      <div><img src="http://placehold.it/100x100" alt="thumb" /></div>
+    </div>
+    <div>
+      <h2>float 속성 다음에 오는 요소</h2>
+    </div>
+  </body>
+</html>

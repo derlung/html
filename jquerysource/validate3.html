@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="return check()">
+      <div>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age" required />
+      </div>
+      <div><button type="submit">전송</button></div>
+    </form>
+
+    <script>
+      function check() {
+        //이름을 가져와서 값이 입력되었는지 확인
+        let name = document.querySelector("#name");
+        if (name.value === "") {
+          alert("이름을 입력하세요");
+          name.focus();
+          return false;
+        }
+        //나이를 가져와서 값이 입력되었는지 확인
+        let age = document.querySelector("#age");
+        console.log(parseInt(age.value));
+        if (age.value === "") {
+          alert("나이를 입력하세요");
+          age.focus();
+          return false;
+        }
+        if (isNaN(age.value)) {
+          alert("숫자로 입력하세요");
+          age.focus();
+          return false;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>

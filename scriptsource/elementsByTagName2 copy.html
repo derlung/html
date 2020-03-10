@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head   profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png"> 
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+    </ul>
+    <ul>
+      <li>List item5</li>
+      <li>List item6</li>
+      <li>List item7</li>
+      <li>List item8</li>
+    </ul>
+    <div id="result"></div>
+    <script>
+      let ulList = document.getElementsByTagName("ul");
+      console.log(ulList);
+      console.log(ulList[1].innerText);
+      let secondUlChildren = ulList[1].children;
+      console.log(secondUlChildren);
+      console.log(secondUlChildren.length);
+      let result = document.getElementById("result");
+      for(let i=0;i<secondUlChildren.length;i++){
+        result.append(secondUlChildren[i].firstChild);
+      }
+    </script>
+  </body>
+</html>

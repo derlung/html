@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 문서가 로드되면 body안에  img태그를 사입한 후
+      window.onload = function() {
+        let output = "<ul>";
+        output += "<li>JAVASCRIPT</li>";
+        output += "<li>CSS</li>";
+        output += "<li>JQUERY</li>";
+        output += "</ul>";
+        // document.body.append(output);
+        // document.body.innerText = output;
+        document.body.innerHTML = output;
+      };
+    </script>
+  </body>
+</html>

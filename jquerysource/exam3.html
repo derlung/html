@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="changeStyle()">
+      This is a paragraph
+    </p>
+    <script>
+      function changeStyle() {
+        //p 태그 안 문자 스타일 변경하기
+        // 색상, 크기, 이탤릭, 글꼴 변경
+        // let p = document.querySelector("p");
+        let p = $("p");
+        p.css({
+          color: "red"
+        });
+      }
+    </script>
+  </body>
+</html>

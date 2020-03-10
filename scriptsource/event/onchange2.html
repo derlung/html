@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <select name="fruits" id="" oncahnge="fruits()">
+        <option value="사과">사과 </option>
+        <option value="바나나">바나나 </option>
+        <option value="수박">수박</option>
+        <option value="오렌지">오렌지 </option>
+        <option value="망고">망고 </option>
+      </select>
+    </form>
+    <script>
+      function fruits_select() {}
+      function fruits() {
+        let fruit = document.querySelector("select");
+        alert(fruit.value);
+      }
+    </script>
+  </body>
+</html>
